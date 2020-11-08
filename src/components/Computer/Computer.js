@@ -3,6 +3,7 @@ import { laptopProduct} from '../../data';
 import ComputerItems from './ComputerItems';
 import {StyledContener,StyledH1,StyledGrid} from '../Style/ShopList';
 import loaded from '../assets/ball.svg';
+import Loaded from '../Loaded';
 export default class Computer extends Component {
 
     state = {
@@ -30,10 +31,9 @@ export default class Computer extends Component {
         
         return (
             <StyledContener>
-                {this.state.loading&&this.loaded}
+                {this.state.loading&&<Loaded/>}
                 <StyledH1>Komputery</StyledH1>
                 <StyledGrid> {this.laptops()}</StyledGrid>
-               
             </StyledContener>
         );
     }

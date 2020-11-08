@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {ProductConsumers} from '../../context';
 import {StylledWrapper} from '../Style/ShopList';
@@ -7,7 +6,7 @@ import PropTypes from 'prop-types';
 
 export default class Product extends Component {
     render() {
-        const {id, title, img, price, inCart, roz, ram, buy, pam} = this.props.product;
+        const {id, title, img, price, inCart, ram, buy, pam} = this.props.product;
         return (
             <>
            <StylledWrapper>

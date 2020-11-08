@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
-import { LaptopConsumers } from '../Computer/Context';
 import { ProductConsumers } from '../../context';
 import { Link } from 'react-router-dom';
 import { StylledWrapper } from '../Style/ShopList';
 
 export default class ComputerItems extends Component {
-
-
-
 
     render() {
         const { items } = this.props

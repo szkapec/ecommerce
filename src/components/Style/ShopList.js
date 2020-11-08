@@ -1,20 +1,11 @@
-import react from 'react';
 import styled from 'styled-components';
 
 
 export const StyledContener = styled.div`
 /* width: 300px; */
-margin: 0 auto;
-max-width: 1240px;
-/* @media(min-width:600px) {
-    width: 500px;
-}
-@media(min-width: 900px) {
-    width: 800px;
-}
-@media(min-width: 1300px) {
-    width: 1200px;
-} */
+    margin: 0 auto;
+    max-width: 1240px;
+
 `
 
 

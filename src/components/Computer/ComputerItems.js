@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { LaptopConsumers } from './Context';
 import { Link } from 'react-router-dom';
 import { StylledWrapper } from '../Style/ShopList';
 import {ProductConsumers} from '../../context';

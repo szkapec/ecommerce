@@ -2,19 +2,14 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
 import styled from 'styled-components';
-
 import {ProductConsumers} from '../context';
-import {LaptopConsumers} from './Computer/Context';
 
-  
 export default class Navbar extends Component {
-
     state = {
         obiectOne: 0,
         obiectTwo: 0,
     }
     render() {
-
         return (
             <>
                 <NavWrapper>
@@ -35,21 +30,10 @@ export default class Navbar extends Component {
                             Gadżety
                         </Link></li>
                         </ul>
-
-                    
                     <div>
-
-                    {/* <LaptopConsumers>
-                        {(value) => {
-                            this.obiectOne = value.cart.length;
-                           return  <div className="laptopOne">{value.cart.length}</div>
-                        }}
-                    </LaptopConsumers> */}
                     <ProductConsumers>
                         {(value) => {
                             this.state.obiectTwo = value.cart.length;
-                              
-                            
                             return (
                                 <div className="basket">
                                 <Link to='/cart'>
@@ -75,6 +59,7 @@ const NavWrapper = styled.nav`
     display: grid;
     grid-template-columns: 0px 1fr 80px;
     background: #0097e6;
+    z-index: 11;
 
     .ulList {
         list-style: none;
@@ -218,24 +203,4 @@ const NavWrapper = styled.nav`
         }
     }
 }
-`
-
-const ButtonCoutainer = styled.button`
-    text-transform: capitalize;
-    font-size: 14px;
-    background: transparent;
-    border: 2px solid #bdc3c7;
-    border-color: ${props => props.cart?"var(--mainYellow)": "#eff0f0"};
-    color: ${props => props.cart? "var(--mainYellow)" : "#eff0f0" };
-    border-radius: 8px;
-    padding: 5px 5px;
-    cursor: pointer;
-    margin: 0;
-    transition: all 0.5s ease-in-out;
-    a {
-        margin-top: 10px;
-    }
-    i {
-        margin-right: 3px;
-    }
 `

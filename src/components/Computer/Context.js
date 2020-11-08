@@ -193,8 +193,8 @@ class LaptopProvider extends Component {
         this.setState({
             cart: [],
         }, () => {
-            this.setProducts();
-            this.addTotals();
+            // this.setProducts();
+            // this.addTotals();
         })
     }
 

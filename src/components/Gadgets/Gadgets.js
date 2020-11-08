@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import ComputerItems from './GadgetItems';
 import {gadgetProduct} from '../../data';
-import styled from 'styled-components';
 import {StyledContener,StyledH1,StyledGrid} from '../Style/ShopList';
-import loaded from '../assets/ball.svg';
+import Loaded from '../Loaded';
 export default class Gadgets extends Component {
          
 state = {
@@ -22,15 +21,10 @@ componentDidMount() {
     }), 1000);
 }
 
-loaded = (
-    <div className="loaded">
-        <img src={loaded} alt="loading" />
-    </div>
-)
  render() {
         return (
             <StyledContener>
-                 {this.state.loading&&this.loaded}
+                 {this.state.loading&&<Loaded/>}
                 <StyledH1>Gadzety</StyledH1>
                 <StyledGrid>{this.gadget()}</StyledGrid>
             </StyledContener>

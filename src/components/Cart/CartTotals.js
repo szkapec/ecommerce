@@ -1,21 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
 export default function CartTotals({ value }) {
-    const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
+    const { cartSubTotal, clearCart } = value;
 
     return (
         <StyledComponents>
             <Link to="/" className="cash">
-                <button type="button" onClick={() => clearCart()}>
+                <button type="button">
                     Na raty
                 </button>
-                <button type="button" onClick={() => clearCart()}>
+                <button type="button">
                     Do kasy
                 </button>
             </Link>
-            <div>Koszt całkowity: <strong>{cartSubTotal+10} zł</strong></div>
+            <div>Koszt całkowity: <strong>{cartSubTotal+10}.00 zł</strong></div>
             <Link to="/" className="clear">
                 <button type="button" onClick={() => clearCart()}>
                     Wyczyść koszyk

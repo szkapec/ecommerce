@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 export default function CartItem({ item, value }) {
     const { id, title, img, total, count, price, ram, pam, dysk, s1, s2, graf } = item;
-    const { increment, decrement, removeItem } = value;
-    console.log(item)
+    const { increment, decrement, removeItem, removeItemPoduct } = value;
     return (
         <StyledContainer>
 
@@ -51,8 +50,9 @@ export default function CartItem({ item, value }) {
 
             <div className="price">
 
-                <span className="cart-icon" onClick={(e) => removeItem(id, e)}>
-                    <i class="fas fa-trash-alt"></i>
+                <span className="cart-icon" onClick={(e) => id<=11?removeItem(id):removeItemPoduct(id)}> 
+                {/* removeItem(id, e) */}
+                    <i className="fas fa-trash-alt"></i>
                 </span>
                 <div className="installments" >
                     <div className="install-none">{total / 10}9 <span>x 10 <span className="installment">raty zero</span> szczegóły w ofercie</span></div>

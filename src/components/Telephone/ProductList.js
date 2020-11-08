@@ -3,7 +3,7 @@ import Product from './Product';
 // import Title from '../Style/Title';
 import { ProductConsumers } from '../../context';
 import { StyledContener, StyledH1, StyledGrid } from '../Style/ShopList';
-import loaded from '../assets/ball.svg'
+import Loaded from '../Loaded';
 export default class ProductList extends Component {
 
     state = {
@@ -16,17 +16,14 @@ export default class ProductList extends Component {
             loading: false,
         }), 1000);
     }
-    loaded = (
-        <div className="loaded">
-            <img src={loaded} alt="loading" />
-        </div>
-    )
+
+
     render() {
         return (
             <>
                 {/* <Title name="our" title="products"></Title> */}
                 <StyledContener>
-                    {this.state.loading&&this.loaded}
+                    {this.state.loading&&<Loaded/>}
                     <StyledH1>Smartfony i telefony komórkowe</StyledH1>
                     <StyledGrid>
                         <ProductConsumers >

@@ -180,7 +180,12 @@ class ProductProviders extends Component {
         product.count = product.count-1;
 
         if(product.count===0) {
-            this.removeItem(id)
+            if(product.id<=11) {
+                this.removeItem(id)
+            }
+            else {
+                this.removeItemPoduct(id)
+            }
         }
         else {
         product.total = product.count * product.price;
@@ -199,6 +204,7 @@ class ProductProviders extends Component {
         tempCart = tempCart.filter(item => item.id !== id )
 
         const index = tempProducts.indexOf(this.getItem(id)); //0-8
+        console.log(index,'index')
         let removeProduct = tempProducts[index];
         removeProduct.inCart = false;
         removeProduct.count = 0;
@@ -209,6 +215,42 @@ class ProductProviders extends Component {
             products: [...tempProducts],
         }, () => this.addTotals())
     }
+
+    removeItemPoduct = (id) => {
+        let tempLaptop = [...this.state.laptop]
+        let tempCart = [...this.state.cart]
+        let tempGadget = [...this.state.gadget];
+
+        
+        tempCart = tempCart.filter(item => item.id !== id )
+        
+        var index = tempLaptop.indexOf(this.getItemLaptop(id)); //0-80
+        if(index<0) {
+            index=tempGadget.indexOf(this.getItemGadget(id));
+            let removeProduct = tempGadget[index];
+            removeProduct.inCart = false;
+            removeProduct.count = 0;
+            removeProduct.total = 0;
+            this.setState({
+                cart: [...tempCart],
+                gadget: [...tempGadget],
+            }, () => this.addTotals())
+        } 
+        
+        else {
+            let removeProduct = tempLaptop[index];
+            removeProduct.inCart = false;
+            removeProduct.count = 0;
+            removeProduct.total = 0;
+            this.setState({
+                cart: [...tempCart],
+                laptop: [...tempLaptop],
+            }, () => this.addTotals())
+        }
+    }
+
+
+
 
     clearCart = () => {
         this.setState({
@@ -230,6 +272,7 @@ class ProductProviders extends Component {
             cartTotal: total,
         })
     }
+
     render() {
         return (
             <ProductContexts.Provider value={
@@ -242,6 +285,7 @@ class ProductProviders extends Component {
                     increment: this.increment,
                     decrement: this.decrement,
                     removeItem: this.removeItem,
+                    removeItemPoduct: this.removeItemPoduct,
                     clearCart: this.clearCart,
 
                     handleDetail: this.handleDetail,

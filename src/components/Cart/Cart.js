@@ -3,9 +3,6 @@ import EmptyCart from './EmptyCart';
 import {ProductConsumers} from '../../context';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
-import {LaptopConsumers} from '../Computer/Context'
-
-
 export default class Cart extends Component {
     state={
         flagaA: false,
