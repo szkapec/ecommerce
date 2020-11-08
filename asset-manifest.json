@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ecommerce/static/css/main.f8904f83.chunk.css",
-    "main.js": "/ecommerce/static/js/main.d3695fd5.chunk.js",
-    "main.js.map": "/ecommerce/static/js/main.d3695fd5.chunk.js.map",
-    "runtime-main.js": "/ecommerce/static/js/runtime-main.ee40b3dc.js",
-    "runtime-main.js.map": "/ecommerce/static/js/runtime-main.ee40b3dc.js.map",
-    "static/css/2.437d98bc.chunk.css": "/ecommerce/static/css/2.437d98bc.chunk.css",
-    "static/js/2.c280b07e.chunk.js": "/ecommerce/static/js/2.c280b07e.chunk.js",
-    "static/js/2.c280b07e.chunk.js.map": "/ecommerce/static/js/2.c280b07e.chunk.js.map",
-    "index.html": "/ecommerce/index.html",
-    "precache-manifest.855f9bb32a748e732484050e53c805ca.js": "/ecommerce/precache-manifest.855f9bb32a748e732484050e53c805ca.js",
-    "service-worker.js": "/ecommerce/service-worker.js",
-    "static/css/2.437d98bc.chunk.css.map": "/ecommerce/static/css/2.437d98bc.chunk.css.map",
-    "static/css/main.f8904f83.chunk.css.map": "/ecommerce/static/css/main.f8904f83.chunk.css.map",
-    "static/js/2.c280b07e.chunk.js.LICENSE.txt": "/ecommerce/static/js/2.c280b07e.chunk.js.LICENSE.txt",
-    "static/media/ball.svg": "/ecommerce/static/media/ball.b6c5bdf2.svg",
-    "static/media/logo.svg": "/ecommerce/static/media/logo.5d5d9eef.svg"
+    "main.css": "/static/css/main.4a4d73e6.chunk.css",
+    "main.js": "/static/js/main.4c69dc5b.chunk.js",
+    "main.js.map": "/static/js/main.4c69dc5b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc30dc24.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc30dc24.js.map",
+    "static/css/2.437d98bc.chunk.css": "/static/css/2.437d98bc.chunk.css",
+    "static/js/2.17067a3b.chunk.js": "/static/js/2.17067a3b.chunk.js",
+    "static/js/2.17067a3b.chunk.js.map": "/static/js/2.17067a3b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b33218d23fb9b8c5ca69f163fbb718dd.js": "/precache-manifest.b33218d23fb9b8c5ca69f163fbb718dd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.4a4d73e6.chunk.css.map": "/static/css/main.4a4d73e6.chunk.css.map",
+    "static/js/2.17067a3b.chunk.js.LICENSE.txt": "/static/js/2.17067a3b.chunk.js.LICENSE.txt",
+    "static/media/ball.svg": "/static/media/ball.b6c5bdf2.svg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee40b3dc.js",
+    "static/js/runtime-main.fc30dc24.js",
     "static/css/2.437d98bc.chunk.css",
-    "static/js/2.c280b07e.chunk.js",
-    "static/css/main.f8904f83.chunk.css",
-    "static/js/main.d3695fd5.chunk.js"
+    "static/js/2.17067a3b.chunk.js",
+    "static/css/main.4a4d73e6.chunk.css",
+    "static/js/main.4c69dc5b.chunk.js"
   ]
 }
